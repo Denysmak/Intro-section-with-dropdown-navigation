@@ -4,30 +4,138 @@ box-sizing: border-box;
 }
 body{
 font-family: 'Epilogue', sans-serif;
+height: 100vh;
+display: flex;
+flex-direction: column;
+background-color: hsl(0, 0%, 98%);
 }
 nav{
+position: absolute;    
+margin-top: 10px;    
 /* border: 1px solid black; */
 height: 50px;
+color: rgb(174, 174, 174);
 width: 100%;
 display: flex;
-justify-content: space-between;
+/* justify-content: space-between; */
 align-items: center;
+}
+.black:hover{
+color: black;
+font-weight: 600;
+}
+.features{
+position: relative;
+display: flex;
+justify-content: center;
+}
+.features-hover{
+position: absolute;
+background-color: white;
+height: 150px;
+width: 150px;
+border-radius: 12px;
+top: 30px;
+box-shadow: 0px 0px 10px rgb(202, 202, 202);
+display: none;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+.features-hover small{
+color: rgb(47, 47, 47);
+font-size: 13px;
+}
+/* .features-text:hover{
+color: rgb(47, 47, 47);
+font-weight: 400;
+} */
+.todo-list{
+display: flex;
+align-items: center;
+width: 64%;
+justify-content: space-between;
+}
+.calendar{
+display: flex;
+align-items: center;
+width: 64%;
+justify-content: space-between;
+}
+.reminders{
+display: flex;
+align-items: center;
+width: 64%;
+justify-content: space-between;
+}
+.planning{
+display: flex;
+align-items: center;
+width: 64%;
+justify-content: space-between;
+}
+.company{
+
+position: relative;
+display: flex;
+justify-content: center;
+}
+.company-hover{
+position: absolute;
+top: 30px;
+height: 110px;
+width:100px;
+background-color: white;
+box-shadow: 0px 0px 10px rgb(202, 202, 202);
+border-radius: 12px;
+display: none;
+flex-direction: column;
+padding-left: 20px;
+justify-content: space-evenly;
+
+}
+.company-hover small {
+    color: rgb(47, 47, 47);
+    font-size: 13px;
+}
+main{
+    margin-top: 3%;
+flex-grow: 1;
+display: flex;
+justify-content: center;
+}
+.container{
+height: 100%;
+width: 83%;
+/* border: 1px solid black; */
+padding-bottom: 9%;
+display: flex;
+}
+.left-right{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-grow: 1;
 }
 .left{
 height: 100%;
 padding: 0;
 display: flex;
 align-items: center;
-width: 42%;
+width: 400px;
 min-width: 500px;
 }
 .right{
 max-width: 200px;
 margin-right: 2%;
+justify-self: flex-end;
+}
+.three{
+display: none;
 }
 .logo{
-margin-left: 8%;
-margin-right: 12%;
+margin-left: 2%;
+margin-right: 3%;
 }
 .login-register{
 display: flex;
@@ -37,25 +145,104 @@ min-width: 150px;
 margin: auto;
 }
 .login-register small{
-
 display: flex;
 align-items: center;
 }
 .register{
 display: flex;
 align-items: center;
-border: 1px solid black;
+border: 2px solid black;
 padding: 9px 15px;
 border-radius: 10px;
+}
+.register:hover{
+border: 2.1px solid black;    
+color: black;
+font-weight: 600;
 }
 .click{
 /* border: 1px solid black; */
 align-items: center;
 display: flex;
-width: 100%;
+width: 400px;
 height: 100%;
 justify-content: space-between;
 }
 .arrow-down{
 margin-left: 5px;
 }
+.remoteWork{
+padding-left: 2%;
+/* padding-right: 10%; */
+padding-top: 180px;
+width: 60%;
+/* border: 1px solid black; */
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+.image{
+margin-top: 40px;
+flex-grow: 1;
+background-image: url(./images/image-hero-desktop.png);
+background-size: contain;
+background-repeat: no-repeat;
+}
+.remoteWork h1{
+font-size: 4.5rem;
+}
+.p{
+    margin-top: 5%;
+    line-height: 24px;
+    font-size: 1.05rem;
+}
+.learnMore{
+border: 1px solid black;
+display: flex;
+align-items: center;
+justify-content: center;
+/* padding:2% 4%; */
+margin-top: 6%; 
+border-radius: 15px;  
+width: 140px;
+height: 50px;
+text-align: center;
+color: white;
+background-color: black;
+}
+.learnMore:hover{
+background-color: white;
+color: black;
+}
+.bottomContainer{
+display: flex;
+flex-grow: 1;
+align-items: flex-end;
+}
+.bottom{
+height: fit-content;
+display: flex;
+align-items: center;
+width: 55%;
+justify-content: space-between;
+}
+.bottom :nth-child(1){
+    height: 18px;
+}
+.bottom :nth-child(2) {
+    height: 35px;
+}
+.bottom :nth-child(3) {
+    height: 20px;
+}
+/* .bottom{
+flex-grow: 1;
+display: flex;
+align-items: flex-end;
+width: 50%;
+justify-content: space-between;
+} */
+
+
+
+
