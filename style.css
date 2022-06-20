@@ -8,17 +8,23 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 background-color: hsl(0, 0%, 98%);
+box-sizing: border-box;
+position: relative;
 }
 nav{
-position: absolute;    
-margin-top: 10px;    
+/* position: absolute;     */
+/* margin-top: 10px;   */
+margin-left: 2%;
+margin-right: 2%;  
 /* border: 1px solid black; */
-height: 50px;
+height: 70px;
 color: rgb(174, 174, 174);
 width: 100%;
 display: flex;
 /* justify-content: space-between; */
 align-items: center;
+padding-left: 2%;
+padding-right: 2%;
 }
 .black:hover{
 color: black;
@@ -99,7 +105,7 @@ justify-content: space-evenly;
     font-size: 13px;
 }
 main{
-    margin-top: 3%;
+    /* margin-top: 3%; */
 flex-grow: 1;
 display: flex;
 justify-content: center;
@@ -122,7 +128,7 @@ height: 100%;
 padding: 0;
 display: flex;
 align-items: center;
-width: 400px;
+width: 100%;
 min-width: 500px;
 }
 .right{
@@ -134,7 +140,7 @@ justify-self: flex-end;
 display: none;
 }
 .logo{
-margin-left: 2%;
+/* margin-left: 2%; */
 margin-right: 3%;
 }
 .login-register{
@@ -190,11 +196,17 @@ background-repeat: no-repeat;
 }
 .remoteWork h1{
 font-size: 4.5rem;
+
+}
+h1 span {
+display: block;
 }
 .p{
     margin-top: 5%;
     line-height: 24px;
     font-size: 1.05rem;
+    width: 100%;
+    max-width: 400px;
 }
 .learnMore{
 border: 1px solid black;
@@ -224,6 +236,7 @@ height: fit-content;
 display: flex;
 align-items: center;
 width: 55%;
+min-width: 400px;
 justify-content: space-between;
 }
 .bottom :nth-child(1){
@@ -235,6 +248,9 @@ justify-content: space-between;
 .bottom :nth-child(3) {
     height: 20px;
 }
+.menu{
+display: none;
+}
 /* .bottom{
 flex-grow: 1;
 display: flex;
@@ -242,6 +258,176 @@ align-items: flex-end;
 width: 50%;
 justify-content: space-between;
 } */
+@media (max-width:800px){
+
+
+nav {
+  
+    margin-top: 10px;
+    padding-left: 2%;
+    padding-right: 5%;
+    /* border: 1px solid black; */
+    height: 50px;
+    color: rgb(174, 174, 174);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+    .left {
+            height: 100%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            width: 350px;
+            min-width: 0px;
+        }
+
+}
+@media (max-width:700px){
+.menu {
+        display: flex;
+    }
+.left-right {
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+.container {
+            height: 100%;
+            width: 100%;
+            /* border: 1px solid black; */
+            padding-bottom: 20%;
+            display: flex;
+            flex-direction: column-reverse;
+    }
+        .remoteWork {
+            padding-left: 0%;
+            padding-top: 5%;
+            /* padding-right: 10%; */
+            margin-top: 0%;
+            width: 100%;
+            /* border: 1px solid black; */
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    .image {
+            margin-top: 0px;
+            width: 100%;
+            height: 70%;
+            max-height: 450px;
+            flex-grow: 1;
+            background-image: url(./images/image-hero-mobile.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            /* border: 1px solid black; */
+            }
+                    
+    main {
+            height: 100%;
+            margin-top: 0%;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+             }
+
+    .remoteWork h1 {
+            font-size: 2.6rem;
+            margin-top: 4%;
+        }
+    h1 span {
+            display: inline-block;
+        }
+   
+    nav {
+            position: relative;
+            margin-top: 10px;
+            /* border: 1px solid black; */
+            height: 50px;
+            color: rgb(174, 174, 174);
+            width: 100%;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+                }
+        .p {
+            margin-top: 5%;
+            width: 80%;
+            line-height: 24px;
+            font-size: 1.05rem;
+            text-align: center;
+        }
+        .learnMore {
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding:2% 4%; */
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border-radius: 15px;
+            width: 140px;
+            height:80px;
+            max-height: 50px;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        .bottomContainer {
+            display: flex;
+            flex-grow: 1;
+            align-items: flex-end;
+            width: 100%;
+            justify-content: center;
+        }
+        .bottom {
+            height: fit-content;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+                }
+        .bottom :nth-child(1) {
+            height: 15px;
+                }
+        
+        .bottom :nth-child(2) {
+            height: 28px;
+                }
+        
+        .bottom :nth-child(3) {
+            height: 18px;
+                }
+        .bottom :nth-child(4) {
+            height: 20px;
+                }
+}
+
+
+  @media (max-width:500px) {
+
+    .image {
+            margin-top: 0px;
+            width: 100%;
+            height: 54%;
+            max-height: 450px;
+            flex-grow: 1;
+            background-image: url(./images/image-hero-mobile.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: top;
+            /* border: 1px solid black; */
+        }
+
+} 
 
 
 
