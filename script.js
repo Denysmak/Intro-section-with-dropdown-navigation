@@ -6,7 +6,10 @@ let companyHover = document.querySelector(".company-hover")
 let companyText = document.querySelector(".companyText")
 let menu = document.querySelector(".menu");
 let leftRight = document.querySelector(".left-right");
+let leftRightContainer = document.querySelector(".left-right-container")
 
+
+console.log(leftRightContainer)
 
 features.addEventListener("mouseover",function(){
     featuresArrow.src = "./images/icon-arrow-up.svg"
@@ -29,11 +32,7 @@ companyText.addEventListener("mouseout", function () {
 menu.addEventListener("click", function(){
 
 leftRight.style.display = "flex"
- leftRight.style.flexDirection = "column"
- leftRight.style.position = "absolute"   
- leftRight.style.height = "100vh"
-//  leftRight.style.border = "1px solid black"
- leftRight.style.backgroundColor = "white"
+
 })
 
 

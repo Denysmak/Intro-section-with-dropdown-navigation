@@ -5,11 +5,12 @@ box-sizing: border-box;
 body{
 font-family: 'Epilogue', sans-serif;
 height: 100vh;
+width: 100%;
 display: flex;
 flex-direction: column;
 background-color: hsl(0, 0%, 98%);
 box-sizing: border-box;
-position: relative;
+position: fixed;
 }
 nav{
 /* position: absolute;     */
@@ -117,11 +118,23 @@ width: 83%;
 padding-bottom: 9%;
 display: flex;
 }
+.left-right-container{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: flex-end;
+
+}
 .left-right{
+position: absolute;
+height: 70px;
+
 display: flex;
 align-items: center;
 justify-content: space-between;
 flex-grow: 1;
+width: 100%;
 }
 .left{
 height: 100%;
@@ -130,6 +143,7 @@ display: flex;
 align-items: center;
 width: 100%;
 min-width: 500px;
+margin-left: 12%;
 }
 .right{
 max-width: 200px;
@@ -141,7 +155,8 @@ display: none;
 }
 .logo{
 /* margin-left: 2%; */
-margin-right: 3%;
+
+
 }
 .login-register{
 display: flex;
@@ -258,7 +273,18 @@ align-items: flex-end;
 width: 50%;
 justify-content: space-between;
 } */
-@media (max-width:800px){
+
+@media (max-width:1250px) {
+.left{
+
+margin-left: 160px;
+
+}
+
+
+}
+
+@media (max-width:820px){
 
 
 nav {
@@ -290,12 +316,95 @@ nav {
 .menu {
         display: flex;
     }
+
+    .left-right-container{
+
+    /* background-color: rgba(22, 22, 22, 0.7); */
+
+    }
+
 .left-right {
+        
         display: none;
+        flex-direction: column;
+        height: 100vh;
+        width: 60%;
+        background-color: white;
+        border: 1px solid black;
+        position: absolute;
         align-items: center;
         justify-content: space-between;
-        flex-grow: 1;
+        flex-grow: initial;
+        font-size: 1.2rem;
     }
+
+         .left {
+             height: 30%;
+             padding: 0;
+             display: flex;
+             align-items: flex-start;
+             width: 100%;
+             min-width: 0px;
+             margin-left: 0%;
+             justify-content: center;
+             margin-bottom: 25%;
+         }
+
+                 .right {
+                     max-width: 200px;
+                     margin-right: 2%;
+                     justify-self: flex-end;
+                     flex-grow: 1;
+                 }
+
+                 .login{
+
+                  height: 38px;
+                  display: flex;
+                   justify-content: center;
+
+                 }
+
+          .login-register {
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             width: 100px;
+             min-width: 150px;
+             margin: auto;
+             height: 16%;
+           }  
+
+                   .register {
+                       display: flex;
+                       align-items: center;
+                       border: 2px solid black;
+                       padding: 9px 15px;
+                       border-radius: 10px;
+                       width: 100%;
+                       justify-content: center;
+
+                   }
+                   .register small{
+
+                    display: flex;
+                    justify-content: center;
+
+                   }
+
+        .click {
+            margin-top: 16%;
+            /* border: 1px solid black; */
+            flex-direction: column;
+            align-items: flex-start;
+            display: flex;
+            width: 400px;
+            height: 100%;
+            justify-content: space-around;
+            padding-left: 10%;
+                 }
+
+
 .container {
             height: 100%;
             width: 100%;
@@ -354,7 +463,7 @@ nav {
             color: rgb(174, 174, 174);
             width: 100%;
             display: flex;
-            /* justify-content: space-between; */
+            justify-content: space-between;
             align-items: center;
                 }
         .p {
@@ -426,7 +535,7 @@ nav {
             background-position-y: top;
             /* border: 1px solid black; */
         }
-
+    
 } 
 
 
