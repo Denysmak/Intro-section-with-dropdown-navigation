@@ -1,0 +1,19 @@
+{
+  "name": "intro-section-with-dropdown-navigation-main---react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Denysmak/Intro-section-with-dropdown-navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Denysmak/Intro-section-with-dropdown-navigation/issues"
+  },
+  "homepage": "https://github.com/Denysmak/Intro-section-with-dropdown-navigation#readme"
+}
